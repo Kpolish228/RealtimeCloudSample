@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Realtime Cloud — Landing Template</title>
+  <meta name="description" content="ZEGOCLOUD-inspired SaaS landing template. Replace copy and placeholders with your product content." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_Version2.css" />
+  <script defer src="./app_Version2.js"></script>
+</head>
+<body>
+  <!-- Template: Realtime Cloud landing page -->
+  <div class="fx-layer" aria-hidden="true"></div>
+
+  <!-- Top Notice (Dismiss or update the link) -->
+  <div class="notice" role="region" aria-label="Top notice">
+    <div class="container row between center">
+  <span>New: SDK 2.0 improves rendering and latency</span>
+  <a href="./release-notes.html" class="link">Read release notes →</a>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="header" role="banner">
+    <div class="container row between center">
+      <a class="brand row center" href="#" aria-label="Homepage">
+        <!-- Brand mark: replace initials or swap for an SVG/logo -->
+        <div class="brand-mark" aria-hidden="true">R</div>
+        <span class="brand-name">Realtime Cloud</span>
+      </a>
+
+    <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="primary-menu">
+      <li><a href="./product.html">Product</a></li>
+      <li><a href="./sdks.html">SDK</a></li>
+      <li><a href="./solutions.html">Solutions</a></li>
+      <li><a href="./pricing.html">Pricing</a></li>
+      <li><a href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <a class="btn ghost" href="./login.html">Sign in</a>
+        <a class="btn primary" href="./register.html">Start for free</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="product" aria-labelledby="hero-heading">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 id="hero-heading">Real-time communications for your app</h1>
+        <p class="sub">
+          Add calls, live streaming, and chat in minutes. Ready-made UI components, scalable infra, and transparent pricing.
+        </p>
+        <div class="row">
+          <a class="btn primary lg" href="./demo.html">Try the demo</a>
+          <a class="btn white lg" href="./pricing.html">See pricing</a>
+        </div>
+        <ul class="bullets">
+          <li>Ultra-low latency <strong>< 200 ms</strong></li>
+          <li>Prebuilt widgets for Web, iOS, Android</li>
+          <li>Usage-based billing</li>
+        </ul>
+      </div>
+      <div class="hero-media">
+        <img
+          src="https://picsum.photos/seed/hero-ui/1120/700"
+          alt="[Replace] Product interface preview"
+          class="mock"
+        />
+        <!-- Small avatars or decorative images to show visual slots -->
+        <div class="hero-avatars" aria-hidden="true">
+          <img src="https://picsum.photos/seed/a1/80/80" alt="" />
+          <img src="https://picsum.photos/seed/a2/80/80" alt="" />
+          <img src="https://picsum.photos/seed/a3/80/80" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted by -->
+  <section class="trusted" aria-labelledby="trusted-heading">
+    <div class="container">
+      <h2 id="trusted-heading">Trusted by teams worldwide</h2>
+      <div class="logos">
+        <img src="https://picsum.photos/seed/logo1/140/44" alt="[Replace] Client logo 1" />
+        <img src="https://picsum.photos/seed/logo2/140/44" alt="[Replace] Client logo 2" />
+        <img src="https://picsum.photos/seed/logo3/140/44" alt="[Replace] Client logo 3" />
+        <img src="https://picsum.photos/seed/logo4/140/44" alt="[Replace] Client logo 4" />
+        <img src="https://picsum.photos/seed/logo5/140/44" alt="[Replace] Client logo 5" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" aria-labelledby="features-heading">
+    <div class="container">
+      <h2 id="features-heading" class="center">Build faster with ready components</h2>
+  <p class="muted center max600">Ship video, voice, chat, recording, and moderation with a few lines of code.</p>
+
+      <div class="grid grid-3">
+        <!-- Feature card -->
+        <article class="card feature">
+          <div class="icon gradient"></div>
+          <h3>HD Video Calls</h3>
+          <p>Crystal-clear group and 1:1 video with adaptive bitrate.</p>
+        </article>
+
+        <article class="card feature">
+          <div class="icon gradient"></div>
+          <h3>Live Streaming</h3>
+          <p>Low-latency broadcast for events, gaming, and shows.</p>
+        </article>
+
+        <article class="card feature">
+          <div class="icon gradient"></div>
+          <h3>Realtime Chat</h3>
+          <p>Threads, reactions, typing indicators, and moderation tools.</p>
+        </article>
+
+        <article class="card feature">
+          <div class="icon gradient"></div>
+          <h3>Recording</h3>
+          <p>Cloud recording and on-demand playback for sessions.</p>
+        </article>
+
+        <article class="card feature">
+          <div class="icon gradient"></div>
+          <h3>AI Effects</h3>
+          <p>Background blur, noise suppression, and voice filters.</p>
+        </article>
+
+        <article class="card feature">
+          <div class="icon gradient"></div>
+          <h3>Global Scaling</h3>
+          <p>Worldwide edge network with smart routing and failover.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Code Examples with Tabs -->
+  <section class="section alt" id="code" aria-labelledby="code-heading">
+    <div class="container">
+      <h2 id="code-heading" class="center">Add it in minutes</h2>
+      <p class="muted center max600">Switch tabs to see Web, iOS, and Android examples.</p>
+
+      <!-- Tab buttons -->
+      <div class="tabs" role="tablist" aria-label="Code examples">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-web" id="tab-web" data-tab="web">Web</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-ios" id="tab-ios" data-tab="ios">iOS</button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-android" id="tab-android" data-tab="android">Android</button>
+      </div>
+
+      <!-- Tab panels -->
+      <div class="code-panels">
+  <pre class="code-panel show" id="panel-web" role="tabpanel" aria-labelledby="tab-web"><code class="code">
+/* Simple Web usage example */
+import { Client } from "realtime-cloud";
+
+const client = new Client({ key: "YOUR_API_KEY" });
+
+const call = await client.call.create({
+  roomId: "demo-room",
+  video: true,
+  audio: true,
+});
+
+call.join(document.getElementById("app"));
+        </code></pre>
+
+  <pre class="code-panel" id="panel-ios" role="tabpanel" aria-labelledby="tab-ios"><code class="code">
+// Swift iOS example
+import UIKit
+import RealtimeCloudSDK
+
+let client = RCClient(config: RCConfig(apiKey: "YOUR_API_KEY"))
+let call = try await client.createCall(roomId: "demo-room", video: true, audio: true)
+try await call.join(in: view)
+        </code></pre>
+
+  <pre class="code-panel" id="panel-android" role="tabpanel" aria-labelledby="tab-android"><code class="code">
+// Kotlin Android example
+val client = RCClient(RCConfig(apiKey = "YOUR_API_KEY"))
+val call = client.createCall(roomId = "demo-room", video = true, audio = true)
+call.join(containerView)
+        </code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions / Use cases -->
+  <section class="section" id="solutions" aria-labelledby="solutions-heading">
+    <div class="container">
+      <h2 id="solutions-heading" class="center">Solutions for your use case</h2>
+      <div class="grid grid-3">
+        <article class="card media">
+          <img src="https://picsum.photos/seed/use1/480/300" alt="[Replace] Live streaming preview" />
+          <div class="media-body">
+            <h3>Live Streaming</h3>
+            <p>Host interactive broadcasts with reactions and gifts.</p>
+          </div>
+        </article>
+
+        <article class="card media">
+          <img src="https://picsum.photos/seed/use2/480/300" alt="[Replace] Video calls preview" />
+          <div class="media-body">
+            <h3>Video Calls</h3>
+            <p>1:1 and group calls with screen sharing and chat.</p>
+          </div>
+        </article>
+
+        <article class="card media">
+          <img src="https://picsum.photos/seed/use3/480/300" alt="[Replace] Classroom preview" />
+          <div class="media-body">
+            <h3>Online Classroom</h3>
+            <p>Breakouts, whiteboard, attendance, and recordings.</p>
+          </div>
+        </article>
+
+        <article class="card media">
+          <img src="https://picsum.photos/seed/use4/480/300" alt="[Replace] Gaming preview" />
+          <div class="media-body">
+            <h3>Gaming</h3>
+            <p>Low-latency voice and spectating for squads and e-sports.</p>
+          </div>
+        </article>
+
+        <article class="card media">
+          <img src="https://picsum.photos/seed/use5/480/300" alt="[Replace] Events preview" />
+          <div class="media-body">
+            <h3>Events & Webinars</h3>
+            <p>Q&A, polls, hand raise, and professional recording.</p>
+          </div>
+        </article>
+
+        <article class="card media">
+          <img src="https://picsum.photos/seed/use6/480/300" alt="[Replace] Support preview" />
+          <div class="media-body">
+            <h3>Customer Support</h3>
+            <p>Instant video help desk with chat and co-browsing.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SDKs -->
+  <section class="section alt" id="sdks" aria-labelledby="sdks-heading">
+    <div class="container">
+      <h2 id="sdks-heading" class="center">SDKs for every platform</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <h3>Web SDK</h3>
+          <p>React hooks and vanilla JS with prebuilt UI.</p>
+          <a class="btn ghost" href="./docs.html">View docs</a>
+        </article>
+        <article class="card">
+          <h3>iOS SDK</h3>
+          <p>Swift & SwiftUI components with background effects.</p>
+          <a class="btn ghost" href="./docs.html">View docs</a>
+        </article>
+        <article class="card">
+          <h3>Android SDK</h3>
+          <p>Kotlin-first, Jetpack-ready components and samples.</p>
+          <a class="btn ghost" href="./docs.html">View docs</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <h2 id="testimonials-heading" class="center">What customers say</h2>
+      <div class="grid grid-3">
+        <figure class="card quote">
+          <blockquote>“The integration took days, not weeks. Quality is top-notch.”</blockquote>
+          <figcaption class="row start center">
+            <img src="https://picsum.photos/seed/t1/64/64" alt="[Replace] Avatar" class="avatar" />
+            <div>
+              <strong>[Replace] Alex P.</strong><br />
+              <span class="muted">CTO, FintechCo</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="card quote">
+          <blockquote>“Latency is consistently low, and the pricing is predictable.”</blockquote>
+          <figcaption class="row start center">
+            <img src="https://picsum.photos/seed/t2/64/64" alt="[Replace] Avatar" class="avatar" />
+            <div>
+              <strong>[Replace] Maria L.</strong><br />
+              <span class="muted">Head of Product, HealthPlus</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="card quote">
+          <blockquote>“Prebuilt UI saved us weeks. Our team loves the SDK quality.”</blockquote>
+          <figcaption class="row start center">
+            <img src="https://picsum.photos/seed/t3/64/64" alt="[Replace] Avatar" class="avatar" />
+            <div>
+              <strong>[Replace] Daniel K.</strong><br />
+              <span class="muted">Engineering Manager, EduWave</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section alt" id="pricing" aria-labelledby="pricing-heading">
+    <div class="container">
+      <h2 id="pricing-heading" class="center">Simple, transparent pricing</h2>
+      <p class="muted center max600">Start for free. Upgrade as you scale.</p>
+
+      <div class="pricing-grid">
+        <!-- Tier: Free -->
+        <article class="card price">
+          <h3>Free</h3>
+          <div class="price-tag">$0<span>/mo</span></div>
+          <ul>
+            <li>1,000 minutes included</li>
+            <li>Developer environment</li>
+            <li>Email support</li>
+          </ul>
+          <a class="btn ghost" href="#cta">Get started</a>
+        </article>
+
+        <!-- Tier: Pro (highlighted) -->
+        <article class="card price highlight" aria-label="Recommended plan">
+          <div class="badge">Popular</div>
+          <h3>Pro</h3>
+          <div class="price-tag">$99<span>/mo</span></div>
+          <ul>
+            <li>50,000 minutes included</li>
+            <li>Production SLA</li>
+            <li>Priority support</li>
+          </ul>
+          <a class="btn primary" href="#cta">Start Pro</a>
+        </article>
+
+        <!-- Tier: Enterprise -->
+        <article class="card price">
+          <h3>Enterprise</h3>
+          <div class="price-tag">Custom</div>
+          <ul>
+            <li>Unlimited scale</li>
+            <li>Custom SLAs</li>
+            <li>Dedicated manager</li>
+          </ul>
+          <a class="btn ghost" href="#">Contact sales</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container">
+      <h2 id="faq-heading" class="center">Frequently asked questions</h2>
+      <div class="faq">
+        <!-- FAQ item: Copy and update question/answer -->
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq1" id="faq-btn-1">
+            How is usage billed?
+          </button>
+          <div class="faq-a" id="faq1" role="region" aria-labelledby="faq-btn-1" hidden>
+            We bill based on minutes used across video, audio, and streaming features.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq2" id="faq-btn-2">
+            Do you offer a free tier?
+          </button>
+          <div class="faq-a" id="faq2" role="region" aria-labelledby="faq-btn-2" hidden>
+            Yes, the Free tier includes 1,000 monthly minutes—perfect for evaluation and small pilots.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq3" id="faq-btn-3">
+            Which platforms are supported?
+          </button>
+          <div class="faq-a" id="faq3" role="region" aria-labelledby="faq-btn-3" hidden>
+            Web, iOS, and Android SDKs are available, with more platforms on the way.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq4" id="faq-btn-4">
+            Can we use our own UI?
+          </button>
+          <div class="faq-a" id="faq4" role="region" aria-labelledby="faq-btn-4" hidden>
+            Absolutely. Use prebuilt UI to ship faster, or build your own with our core APIs.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq5" id="faq-btn-5">
+            Is there recording support?
+          </button>
+          <div class="faq-a" id="faq5" role="region" aria-labelledby="faq-btn-5" hidden>
+            Yes, cloud recording with on-demand playback is available on Pro and above.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq6" id="faq-btn-6">
+            Do you have SLAs?
+          </button>
+          <div class="faq-a" id="faq6" role="region" aria-labelledby="faq-btn-6" hidden>
+            Pro includes a standard SLA; Enterprise offers custom SLAs and a dedicated manager.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta" aria-labelledby="cta-heading">
+    <div class="container cta-inner">
+      <div>
+        <h2 id="cta-heading">Build your real-time experience today</h2>
+        <p class="muted">Start for free, integrate in minutes, and scale globally.</p>
+      </div>
+  <a class="btn white lg" href="./register.html">Create your account</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand row center" href="#">
+          <div class="brand-mark" aria-hidden="true">R</div>
+          <span class="brand-name">Realtime Cloud</span>
+        </a>
+        <p class="muted small">[REPLACE TEXT] A modern platform for video, voice, and chat.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#product">Overview</a></li>
+          <li><a href="#code">Quickstart</a></li>
+          <li><a href="#sdks">SDKs</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <ul>
+          <li><a href="#solutions">Live Streaming</a></li>
+          <li><a href="#solutions">Video Calls</a></li>
+          <li><a href="#solutions">Classroom</a></li>
+          <li><a href="#solutions">Gaming</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Guides</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container row between center footnote">
+      <span class="muted small">© <span id="year"></span> Realtime Cloud. All rights reserved.</span>
+      <div class="social">
+  <a href="#" aria-label="Twitter">Twitter</a>
+  <a href="#" aria-label="LinkedIn">LinkedIn</a>
+  <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

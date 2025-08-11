@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Release Notes — Realtime Cloud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_Version2.css" />
+  <script defer src="./app_Version2.js"></script>
+</head>
+<body>
+  <div class="fx-layer" aria-hidden="true"></div>
+  <header class="header" role="banner">
+    <div class="container row between center">
+      <a class="brand row center" href="./index.html" aria-label="Homepage">
+        <div class="brand-mark" aria-hidden="true">R</div>
+        <span class="brand-name">Realtime Cloud</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./sdks.html">SDK</a></li>
+          <li><a href="./solutions.html">Solutions</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="actions"></div>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="h1">
+    <div class="container" style="max-width:860px;">
+      <h1 id="h1">Release Notes</h1>
+      <p class="muted">What’s new, improved, and fixed in Realtime Cloud.</p>
+
+      <article class="card" style="margin-top:16px;">
+        <h3>v2.0 — Rendering & Latency Improvements</h3>
+        <p class="muted small">2025-08-01</p>
+        <ul>
+          <li>Video pipeline optimized — up to 18% lower end-to-end latency in group calls.</li>
+          <li>New adaptive encoder presets for unstable networks.</li>
+          <li>Faster viewport switching in the prebuilt UI components.</li>
+          <li>Reduced CPU spikes on low-end devices.</li>
+        </ul>
+        <h4>Developer Experience</h4>
+        <ul>
+          <li>New unified Client API for calls/live/chat.</li>
+          <li>Improved TypeScript types and inline JSDoc.</li>
+          <li>More examples in the docs (Web, iOS, Android).</li>
+        </ul>
+        <h4>Breaking changes</h4>
+        <ul>
+          <li>Deprecated legacy init options (<code>initClient()</code>) — use <code>new Client(config)</code>.</li>
+          <li>Removed experimental “betaCallUI”.</li>
+        </ul>
+      </article>
+
+      <article class="card" style="margin-top:16px;">
+        <h3>v1.9 — Recording & Webhooks</h3>
+        <p class="muted small">2025-06-15</p>
+        <ul>
+          <li>On-demand cloud recording, MP4 and HLS outputs.</li>
+          <li>New webhook events: <code>call.started</code>, <code>call.ended</code>, <code>recording.completed</code>.</li>
+          <li>Console: manage recordings and download links.</li>
+        </ul>
+      </article>
+
+      <article class="card" style="margin-top:16px;">
+        <h3>v1.8 — Chat Reactions & Moderation</h3>
+        <p class="muted small">2025-05-01</p>
+        <ul>
+          <li>Message reactions (👍 ❤️ 🔥 🎉) и typing indicators.</li>
+          <li>Moderation tools: mute, block, report.</li>
+          <li>Rate limiter в реальном времени против спама.</li>
+        </ul>
+      </article>
+
+      <div class="row mt-3">
+        <a class="btn ghost" href="./docs.html">View docs</a>
+        <a class="btn primary" href="./register.html">Start for free</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container row between center footnote">
+      <span class="muted small">© <span id="year"></span> Realtime Cloud. All rights reserved.</span>
+      <div class="social">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

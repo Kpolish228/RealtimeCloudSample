@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact sales — Realtime Cloud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_Version2.css" />
+  <script defer src="./app_Version2.js"></script>
+</head>
+<body>
+  <div class="notice" role="region" aria-label="Top notice">
+    <div class="container row between center">
+      <span>New: SDK 2.0 improves rendering and latency</span>
+      <a href="./release-notes.html" class="link">Read release notes →</a>
+    </div>
+  </div>
+  <div class="fx-layer" aria-hidden="true"></div>
+  <header class="header">
+    <div class="container row between center">
+      <a class="brand row center" href="./index.html"><div class="brand-mark">R</div><span class="brand-name">Realtime Cloud</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./sdks.html">SDK</a></li>
+          <li><a href="./solutions.html">Solutions</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="actions"></div>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="h1">
+    <div class="container" style="max-width:720px;">
+      <h1 id="h1">Talk to sales</h1>
+      <p class="muted">Tell us about your use case, we'll get back within 1–2 business days.</p>
+
+      <form class="card form" id="sales-form">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+        </div>
+        <div class="form-row">
+          <label for="company">Company</label>
+          <input type="text" id="company" />
+        </div>
+        <div class="form-row">
+          <label for="msg">Message</label>
+          <textarea id="msg" rows="5" placeholder="Tell us about your goals..."></textarea>
+        </div>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container row between center footnote">
+      <span class="muted small">© <span id="year"></span> Realtime Cloud</span>
+      <div class="social"><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+    </div>
+  </footer>
+</body>
+</html>

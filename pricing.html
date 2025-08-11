@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing — Realtime Cloud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_Version2.css" />
+  <script defer src="./app_Version2.js"></script>
+</head>
+<body>
+  <div class="notice" role="region" aria-label="Top notice">
+    <div class="container row between center">
+      <span>New: SDK 2.0 improves rendering and latency</span>
+      <a href="./release-notes.html" class="link">Read release notes →</a>
+    </div>
+  </div>
+  <div class="fx-layer" aria-hidden="true"></div>
+  <header class="header">
+    <div class="container row between center">
+      <a class="brand row center" href="./index.html"><div class="brand-mark">R</div><span class="brand-name">Realtime Cloud</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./sdks.html">SDK</a></li>
+          <li><a href="./solutions.html">Solutions</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="actions"></div>
+    </div>
+  </header>
+
+  <section class="hero" aria-labelledby="h1">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 id="h1">Simple, transparent pricing</h1>
+        <p class="sub">Start for free. Upgrade as you scale.</p>
+        <div class="row">
+          <a class="btn primary lg" href="./register.html">Start for free</a>
+          <a class="btn white lg" href="./contact-sales.html">Contact sales</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://picsum.photos/seed/pricing/1120/700" alt="Pricing" class="mock" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="pricing-grid">
+        <article class="card price"><h3>Free</h3><div class="price-tag">$0<span>/mo</span></div><ul><li>1,000 minutes included</li><li>Developer environment</li><li>Email support</li></ul><a class="btn ghost" href="./register.html">Get started</a></article>
+        <article class="card price highlight"><div class="badge">Popular</div><h3>Pro</h3><div class="price-tag">$99<span>/mo</span></div><ul><li>50,000 minutes included</li><li>Production SLA</li><li>Priority support</li></ul><a class="btn primary" href="./register.html">Start Pro</a></article>
+        <article class="card price"><h3>Enterprise</h3><div class="price-tag">Custom</div><ul><li>Unlimited scale</li><li>Custom SLAs</li><li>Dedicated manager</li></ul><a class="btn ghost" href="./contact-sales.html">Contact sales</a></article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container row between center footnote">
+      <span class="muted small">© <span id="year"></span> Realtime Cloud</span>
+      <div class="social"><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Create account — Realtime Cloud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_Version2.css" />
+  <script defer src="./app_Version2.js"></script>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="container row between center">
+      <a class="brand row center" href="./index.html" aria-label="Homepage">
+        <div class="brand-mark" aria-hidden="true">R</div>
+        <span class="brand-name">Realtime Cloud</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a href="./index.html#product">Product</a></li>
+          <li><a href="./index.html#sdks">SDK</a></li>
+          <li><a href="./index.html#solutions">Solutions</a></li>
+          <li><a href="./index.html#pricing">Pricing</a></li>
+          <li><a href="./index.html#resources">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a class="btn ghost" href="./login.html">Sign in</a>
+        <a class="btn primary" href="./register.html">Create account</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="fx-layer" aria-hidden="true"></div>
+
+  <section class="section" aria-labelledby="register-heading">
+    <div class="container" style="max-width:560px;">
+      <h1 id="register-heading" class="center">Create your account</h1>
+      <p class="muted center max600">Start for free, integrate in minutes, and scale globally.</p>
+
+      <form class="card form" id="register-form" autocomplete="on">
+        <div class="form-row">
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Alex Johnson" required />
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+        </div>
+        <div class="form-row">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="••••••••" minlength="6" required />
+        </div>
+        <div class="form-row">
+          <label for="company">Company (optional)</label>
+          <input type="text" id="company" name="company" placeholder="Acme Inc." />
+        </div>
+        <button type="submit" class="btn primary lg" style="width:100%">Create account</button>
+      </form>
+
+      <p class="muted center" style="margin-top:12px">Already have an account? <a class="link" href="./login.html">Sign in</a></p>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container row between center footnote">
+      <span class="muted small">© <span id="year"></span> Realtime Cloud. All rights reserved.</span>
+      <div class="social">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+  <div class="notice" role="region" aria-label="Top notice">
+    <div class="container row between center">
+      <span>New: SDK 2.0 improves rendering and latency</span>
+      <a href="./release-notes.html" class="link">Read release notes →</a>
+    </div>
+  </div>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile — Realtime Cloud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_Version2.css" />
+  <script defer src="./app_Version2.js"></script>
+</head>
+<body>
+  <header class="header" role="banner">
+    <div class="container row between center">
+      <a class="brand row center" href="./index.html" aria-label="Homepage">
+        <div class="brand-mark" aria-hidden="true">R</div>
+        <span class="brand-name">Realtime Cloud</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a href="./index.html#product">Product</a></li>
+          <li><a href="./index.html#sdks">SDK</a></li>
+          <li><a href="./index.html#solutions">Solutions</a></li>
+          <li><a href="./index.html#pricing">Pricing</a></li>
+          <li><a href="./index.html#resources">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="actions">
+        <a class="btn ghost" href="./profile.html">Profile</a>
+        <button class="btn" id="logout-btn" type="button">Log out</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="fx-layer" aria-hidden="true"></div>
+
+  <section class="section" aria-labelledby="profile-heading">
+    <div class="container">
+      <h1 id="profile-heading">Your profile</h1>
+      <p class="muted">Manage your account details.</p>
+
+      <div class="grid grid-2" style="margin-top:18px;">
+        <form class="card form" id="profile-form">
+          <h3>Account</h3>
+          <div class="form-row">
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Alex Johnson" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" />
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Acme Inc." />
+          </div>
+          <div class="form-row">
+            <label for="avatar">Avatar</label>
+            <input type="file" id="avatar" accept="image/*" />
+            <div class="row center mt-2">
+              <img id="avatar-preview" class="avatar-lg" alt="Avatar preview" />
+            </div>
+          </div>
+          <div class="row between center">
+            <button type="submit" class="btn primary">Save changes</button>
+            <button type="button" class="btn ghost" id="delete-account">Delete account</button>
+          </div>
+        </form>
+
+        <div class="card" id="keys-card">
+          <h3>API Keys</h3>
+          <p class="muted">Generate and manage your API keys.</p>
+          <div class="row mt-2">
+            <button class="btn" id="gen-key">Generate key</button>
+          </div>
+          <div class="keys mt-2" id="keys-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container row between center footnote">
+      <span class="muted small">© <span id="year"></span> Realtime Cloud. All rights reserved.</span>
+      <div class="social">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+</body>
+  <div class="notice" role="region" aria-label="Top notice">
+    <div class="container row between center">
+      <span>New: SDK 2.0 improves rendering and latency</span>
+      <a href="./release-notes.html" class="link">Read release notes →</a>
+    </div>
+  </div>
+</html>

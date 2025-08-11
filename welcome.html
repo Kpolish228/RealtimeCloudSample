@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome — Realtime Cloud</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_Version2.css" />
+  <script defer src="./app_Version2.js"></script>
+</head>
+<body>
+  <div class="fx-layer" aria-hidden="true"></div>
+  <header class="header">
+    <div class="container row between center">
+      <a class="brand row center" href="./index.html"><div class="brand-mark">R</div><span class="brand-name">Realtime Cloud</span></a>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-menu"><span></span><span></span><span></span></button>
+        <ul class="nav-list" id="primary-menu">
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./sdks.html">SDK</a></li>
+          <li><a href="./solutions.html">Solutions</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./resources.html">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="actions"></div>
+    </div>
+  </header>
+
+  <section class="section" aria-labelledby="h1">
+    <div class="container" style="max-width:760px;">
+      <h1 id="h1">Welcome, <span id="welcome-name"></span> 🎉</h1>
+      <p class="muted">Your account is ready. You can personalize your profile or jump into the docs and demo.</p>
+
+      <div class="grid grid-3 mt-3">
+        <a class="card glint" href="./profile.html"><h3>Complete profile</h3><p class="muted">Set your name, company, and generate an API key.</p></a>
+        <a class="card glint" href="./docs.html"><h3>Read docs</h3><p class="muted">Quickstart and API reference.</p></a>
+        <a class="card glint" href="./demo.html"><h3>Run demo</h3><p class="muted">Try a live experience now.</p></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container row between center footnote">
+      <span class="muted small">© <span id="year"></span> Realtime Cloud</span>
+      <div class="social"><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+    </div>
+  </footer>
+</body>
+</html>
